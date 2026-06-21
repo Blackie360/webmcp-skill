@@ -1,0 +1,32 @@
+name: Validate Skill
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify SKILL.md frontmatter
+        run: |
+          if ! grep -q '^name: webmcp' webmcp/SKILL.md; then
+            echo "Missing or invalid name in frontmatter"
+            exit 1
+          fi
+          if ! grep -q '^description:' webmcp/SKILL.md; then
+            echo "Missing description in frontmatter"
+            exit 1
+          fi
+          echo "Frontmatter OK"
+
+      - name: List discoverable skills
+        run: npx --yes skills add . --list
