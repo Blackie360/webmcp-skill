@@ -1,5 +1,7 @@
 # webmcp
 
+[![skills.sh](https://skills.sh/b/Blackie360/webmcp-skill)](https://skills.sh/Blackie360/webmcp-skill)
+
 Agent skill for implementing **WebMCP** (Web Model Context Protocol) on websites — expose your app's features as structured, agent-callable tools via `document.modelContext.registerTool()`.
 
 > **Status**: WebMCP is a [draft W3C spec](https://webmachinelearning.github.io/webmcp/). The API may change. Chrome 149+ origin trial and local dev flag available as of mid-2026.
