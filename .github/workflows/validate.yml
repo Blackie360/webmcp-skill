@@ -18,11 +18,11 @@ jobs:
 
       - name: Verify SKILL.md frontmatter
         run: |
-          if ! grep -q '^name: webmcp' webmcp/SKILL.md; then
+          if ! grep -q '^name: webmcp-skill' webmcp-skill/SKILL.md; then
             echo "Missing or invalid name in frontmatter"
             exit 1
           fi
-          if ! grep -q '^description:' webmcp/SKILL.md; then
+          if ! grep -q '^description:' webmcp-skill/SKILL.md; then
             echo "Missing description in frontmatter"
             exit 1
           fi

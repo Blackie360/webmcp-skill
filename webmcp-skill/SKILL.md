@@ -1,5 +1,5 @@
 ---
-name: webmcp
+name: webmcp-skill
 description: >-
   Implements WebMCP (Web Model Context Protocol) on websites using
   document.modelContext.registerTool. Covers tool design, JSON Schema
@@ -9,7 +9,7 @@ description: >-
   agent-ready web tools. Not for server-side MCP servers.
 ---
 
-# WebMCP Implementation
+# WebMCP Skill
 
 Guide for exposing website features to browser agents via the WebMCP API.
 

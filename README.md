@@ -1,4 +1,4 @@
-# webmcp
+# WebMCP Skill
 
 [![skills.sh](https://skills.sh/b/Blackie360/webmcp-skill)](https://skills.sh/Blackie360/webmcp-skill)
 
@@ -11,13 +11,13 @@ Make your website agent-ready **without DOM scraping**. WebMCP lets browser agen
 ## Install
 
 ```bash
-npx skills add <your-github-username>/webmcp -g
+npx skills add Blackie360/webmcp-skill -g
 ```
 
 Install to the current project (omit `-g`):
 
 ```bash
-npx skills add <your-github-username>/webmcp
+npx skills add Blackie360/webmcp-skill
 ```
 
 After publishing, find the skill at [skills.sh](https://skills.sh).
@@ -70,7 +70,7 @@ await document.modelContext.registerTool(
 ## Repository Structure
 
 ```
-webmcp/
+webmcp-skill/
 ├── SKILL.md                    # Agent instructions
 ├── references/
 │   ├── api-reference.md
@@ -87,7 +87,7 @@ webmcp/
 1. Push this repo to a **public** GitHub repository
 2. Add topics: `agent-skills`, `webmcp`, `cursor`, `claude-code`
 3. Verify discovery: `npx skills add . --list`
-4. Share: `npx skills add <owner>/webmcp`
+4. Share: `npx skills add Blackie360/webmcp-skill`
 5. Listing appears on [skills.sh](https://skills.sh) after indexing
 
 ## References
